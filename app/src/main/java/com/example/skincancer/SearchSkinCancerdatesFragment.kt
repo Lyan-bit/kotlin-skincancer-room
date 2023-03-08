@@ -61,9 +61,9 @@ class SearchSkinCancerdatesFragment : Fragment(), View.OnClickListener, AdapterV
 		datesTextField = root.findViewById(R.id.searchSkinCancerField)	    
 		searchSkinCancerSpinner = root.findViewById(R.id.searchSkinCancerSpinner)
 		
-		model.allSkinCancerDatess.observe( viewLifecycleOwner, androidx.lifecycle.Observer { SkinCancerdates ->
-					SkinCancerdates.let {
-						allSkinCancerdatess = SkinCancerdates
+		model.allSkinCancerDatess.observe( viewLifecycleOwner, androidx.lifecycle.Observer { skinCancerDates ->
+					skinCancerDates.let {
+						allSkinCancerdatess = skinCancerDates
 						val searchSkinCancerAdapter =
 						ArrayAdapter(myContext, android.R.layout.simple_spinner_item, allSkinCancerdatess)
 						searchSkinCancerAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
