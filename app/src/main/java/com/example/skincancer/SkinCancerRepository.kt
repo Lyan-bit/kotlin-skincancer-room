@@ -1,6 +1,5 @@
 package com.example.skincancer
 
-import com.example.skincancer.SkinCancerEntity
 import kotlinx.coroutines.flow.Flow
 
 interface SkinCancerRepository {
